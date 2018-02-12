@@ -1,0 +1,17 @@
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/cosmic';
+@import '~@nebular/theme/styles/globals';
+
+$nb-themes: nb-register-theme((
+        background-inverse: #5f1eff,
+        header-foreground: #ce55bd,
+        card-background: #cfe8ff,
+        card-foreground: #747bde,
+        card-separator: red,
+        radius: 0,
+        color-primary: red,
+), blue, cosmic);
+
+@include nb-install() {
+  @include nb-theme-global();
+};

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import 'style-loader!./app.themes.scss';
 
 @Component({
-  selector: 'dy-root',
+  selector: 'dm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

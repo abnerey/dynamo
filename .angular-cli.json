@@ -17,9 +17,11 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "dy",
+      "prefix": "dm",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/@nebular/theme/styles/prebuilt/cosmic.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
