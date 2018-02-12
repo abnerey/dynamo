@@ -6,23 +6,30 @@ import {
     NbCardModule, NbTabsetModule, NbCheckboxModule
 } from '@nebular/theme';
 import { LoginComponent } from './login/login.component';
-import { RoutingModule } from "../routing/routing.module";
+import { EditorComponent } from './editor/editor.component';
+import { RoutingModule } from '../routing/routing.module';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { environment } from "../environments/environment";
-import {ReactiveFormsModule} from "@angular/forms";
+import { environment } from '../environments/environment';
+import {ReactiveFormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
+import { MonacoEditorModule } from 'ngx-monaco-editor';
+
 
 
 @NgModule({
   declarations: [
       AppComponent,
-      LoginComponent
+      LoginComponent,
+      EditorComponent
   ],
   imports: [
       BrowserModule,
       RoutingModule,
       ReactiveFormsModule,
+      FormsModule,
       /* Nebular Configuration */
       NbThemeModule.forRoot({name: 'cosmic'}),
       NbLayoutModule,
@@ -33,7 +40,9 @@ import {ReactiveFormsModule} from "@angular/forms";
       /* Firebase Configuration */
       AngularFireModule.initializeApp(environment.firebaseConfig),
       AngularFireDatabaseModule,
-      AngularFireAuthModule
+      AngularFireAuthModule,
+      /*Monaco Configuration*/
+      MonacoEditorModule.forRoot()
   ],
   providers: [NbSidebarService, NbThemeService],
   bootstrap: [AppComponent]
