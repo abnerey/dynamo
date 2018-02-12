@@ -1,7 +1,52 @@
 <nb-layout>
-  <nb-layout-header fixed>Company Name</nb-layout-header>
+  <nb-layout-column>
+      <section class="container-fluid">
+          <article class="row">
+              <section class="col-lg-12 col-md-12 col-sm-12 text-center">
+                  <article style="height: 10em;"></article>
+              </section>
+          </article>
+          <article class="row">
+              <section class="col-lg-4"></section>
+              <section class="col-lg-4">
+                  <nb-card size="small">
+                      <nb-tabset>
+                          <nb-tab tabTitle="Sign In" fullWidth="true">
+                              <div class="container-fluid">
+                                  <form [formGroup]="signInForm" (ngSubmit)="onSignIn()" class="row login-row">
+                                      <div class="input-group col-lg-12">
+                                          <span class="input-group-addon success">
+                                              <span class="icon">
+                                                  <i class="ion-md-person"></i>
+                                              </span>
+                                          </span>
+                                          <input type="text" class="form-control" placeholder="Username" formControlName="userControl"
+                                                 [(ngModel)]="username"/>
+                                      </div>
+                                      <div class="input-group col-lg-12">
+                                          <span class="input-group-addon success">@</span>
+                                          <input type="password" class="form-control" placeholder="Password" formControlName="passControl"
+                                                 [(ngModel)]="password"/>
+                                      </div>
+                                      <div class="col-lg-12 input-group">
+                                          <nb-checkbox [(ngModel)]="rememberMe" formControlName="rememberControl">Remember Me</nb-checkbox>
+                                      </div>
+                                      <div class="col-lg-12 text-right container-btn">
+                                          <button class="btn btn-hero-primary" type="submit">
+                                              Sign In
+                                          </button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </nb-tab>
+                          <nb-tab tabTitle="Sign Live Session" fullWidth="true">
 
-  <nb-sidebar>Sidebar Content</nb-sidebar>
-
-  <nb-layout-column>Page Content</nb-layout-column>
+                          </nb-tab>
+                      </nb-tabset>
+                  </nb-card>
+              </section>
+              <section class="col-lg-4"></section>
+          </article>
+      </section>
+  </nb-layout-column>
 </nb-layout>

@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.container-btn {
+    margin-bottom: 1.5rem;
+}
+
+.nb-theme-cosmic .custom-control .custom-control-description {
+    padding-left: 2.0rem !important;
+}

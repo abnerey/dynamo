@@ -21,7 +21,8 @@
       "styles": [
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "../node_modules/@nebular/theme/styles/prebuilt/cosmic.css"
+        "../node_modules/@nebular/theme/styles/prebuilt/cosmic.css",
+        "../node_modules/ionicons/dist/scss/ionicons.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
