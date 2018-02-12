@@ -1,2 +1,2 @@
-# dark-magic
+# Dynamo
 Dynamic web presenter for Angular 
