@@ -1,5 +1,5 @@
 @import '~@nebular/theme/styles/theming';
-@import '~@nebular/theme/styles/themes/cosmic';
+@import '~@nebular/theme/styles/themes/default';
 @import '~@nebular/theme/styles/globals';
 
 $nb-themes: nb-register-theme((
@@ -10,7 +10,7 @@ $nb-themes: nb-register-theme((
         card-separator: red,
         radius: 0,
         color-primary: red,
-), blue, cosmic);
+), blue, default);
 
 @include nb-install() {
   @include nb-theme-global();
