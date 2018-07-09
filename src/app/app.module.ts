@@ -31,7 +31,7 @@ import { MonacoEditorModule } from 'ngx-monaco-editor';
       ReactiveFormsModule,
       FormsModule,
       /* Nebular Configuration */
-      NbThemeModule.forRoot({name: 'cosmic'}),
+      NbThemeModule.forRoot({name: 'default'}),
       NbLayoutModule,
       NbSidebarModule,
       NbCardModule,
